@@ -16,11 +16,7 @@ const env = process.env.NODE_ENV === 'testing'
   : require('../config/prod.env')
 
 const webpackConfig = merge(baseWebpackConfig, {
-<<<<<<< HEAD
-  mode: process.env.NODE_ENV || 'production',
-=======
   mode: process.env.NODE_ENV || 'development',
->>>>>>> tsc setup
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,

@@ -3,11 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-<<<<<<< HEAD
-const { VueLoaderPlugin } = require('vue-loader')
-=======
 const VueLoader = require('vue-loader')
->>>>>>> tsc setup
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -46,38 +42,17 @@ module.exports = {
   module: {
     rules: [
       // ...(config.dev.useEslint ? [createLintingRule()] : []),
-<<<<<<< HEAD
-      // {
-      //   test: /\.ts$/,
-      //   exclude: /node_modules/,
-      //   enforce: 'pre',
-      //   use: [
-      //     {
-      //       loader: 'tslint-loader',
-      //     }
-      //   ]
-      // },
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-=======
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [{
->>>>>>> tsc setup
             loader: 'tslint-loader',
           },
           {
             loader: 'ts-loader',
             options: {
               appendTsSuffixTo: [/\.vue$/],
-<<<<<<< HEAD
-=======
               appendTsxSuffixTo: [/\.vue$/],
->>>>>>> tsc setup
             }
           }
         ]
@@ -131,10 +106,6 @@ module.exports = {
     child_process: 'empty'
   },
   plugins: [
-<<<<<<< HEAD
-    new VueLoaderPlugin(),
-=======
     new VueLoader.VueLoaderPlugin()
->>>>>>> tsc setup
   ]
 }

@@ -14,11 +14,7 @@ const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
-<<<<<<< HEAD
-  mode: process.env.NODE_ENV  || 'development',
-=======
   mode: process.env.NODE_ENV || 'development',
->>>>>>> tsc setup
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },

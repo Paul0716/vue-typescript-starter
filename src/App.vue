@@ -1,20 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div id='app'>
-    <img src='./assets/logo.png'>
-    <router-view/>
-  </div>
-</template>
-
-<script lang='ts'>
-import Vue from 'vue'
-import Component from 'vue-class-component'
-
-@Component
-export default class App extends Vue {
-  mounted () {
-    console.log('mounted.')
-=======
   <div id="app">
     <img src="./assets/logo.png">
     <div>
@@ -48,7 +32,6 @@ export default class App extends Vue {
   // 方法
   greet () {
     alert('greeting: ' + this.msg);
->>>>>>> tsc setup
   }
 }
 </script>

@@ -9,13 +9,6 @@
     "src/vue-shim.d.ts"
   ],
   "compilerOptions": {
-<<<<<<< HEAD
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["*", "src/*"]
-    },
-=======
->>>>>>> tsc setup
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "allowJs": true,

@@ -3,6 +3,9 @@
   "globals": {
     "require": true
   },
+  "files": [
+    "src/vue-shim.d.ts"
+  ],
   "rules": {
      "space-before-function-paren": false,
      "whitespace": [false],
